@@ -1,0 +1,150 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+
+.nav {
+    background: linear-gradient(to bottom, #0ea5e9, #38bdf8);
+    padding: 1rem 0;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo{font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.title{
+    font-size: 60px;
+
+}
+
+.par{
+    font-size: 20px;
+}
+
+.hero {
+    text-align: center;
+    color: white;
+    background: linear-gradient(to bottom, #0ea5e9, #38bdf8);
+    padding: 12rem 1rem;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.search-bar {
+    margin-top: 1rem;
+
+}
+.search-bar input {
+    padding: 0.5rem;
+    width: 60%;
+    border-radius: 20px 0 0 20px;
+    background: lightblue;
+}
+.search-bar button {
+    padding: 0.5rem 1rem;
+    background: lightblue;
+    color: #0ea5e9;
+    border-radius: 0 20px 20px 0;
+}
+
+
+.topics {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.how-it-works {
+    background: #0ea5e9;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.step {
+    background: #0284c7;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+.faqs {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.faq {
+    background: white;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.faq-answer {
+    display: none;
+    margin-top: 0.5rem;
+}
+.faq-answer.active {
+    display: block;
+}
+
+
+.contact {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #e2e8f0;
+}
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+
+footer {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}

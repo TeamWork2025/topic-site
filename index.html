@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic Listing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    <nav class="nav">
+        <div class="container">
+            <h1 class="logo">Topic</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Browse Topics</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <section class="hero">
+        <h2 class="title">Discover. Learn. Enjoy</h2>
+        <p class="par">Platform for creatives around the world</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Search topics...">
+            <button>Search</button>
+        </div>
+    </section>
+
+    
+    <section class="topics">
+        <h2>Browse Topics</h2>
+        <div class="grid">
+            <div class="card">Web Design</div>
+            <div class="card">Graphic</div>
+            <div class="card">Logo Design</div>
+        </div>
+    </section>
+
+    
+    <section class="how-it-works">
+        <h2>How does it work?</h2>
+        <div class="steps">
+            <div class="step">🔍 Search your favorite topic</div>
+            <div class="step">📌 Bookmark & Keep it for yourself</div>
+            <div class="step">📖 Read & Enjoy</div>
+        </div>
+    </section>
+
+    
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+            <button class="toggle-faq">What is Topic Listing? <span>+</span></button>
+            <p class="faq-answer">Topic Listing is a free Bootstrap 5 CSS template...</p>
+        </div>
+        <div class="faq">
+            <button class="toggle-faq">How to find a topic? <span>+</span></button>
+            <p class="faq-answer">You can search using the search bar at the top...</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-info">
+            <div>📍 San Francisco Office</div>
+            <div>📍 Dubai Office</div>
+        </div>
+        <iframe src="https://maps.google.com/maps?q=San+Francisco&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Topic Listing. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        
+        document.querySelectorAll(".toggle-faq").forEach(button => {
+            button.addEventListener("click", () => {
+                const answer = button.nextElementSibling;
+                answer.classList.toggle("active");
+                button.querySelector("span").textContent = answer.classList.contains("active") ? "-" : "+";
+            });
+        });
+    </script>
+
+</body>
+</html>
