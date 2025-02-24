@@ -1,4 +1,4 @@
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +6,7 @@ body {
     background-color: #f5f5f5;
 }
 
-
+/* Navigation */
 .nav {
     background: linear-gradient(to bottom, #0ea5e9, #38bdf8);
     padding: 1rem 0;
@@ -27,21 +27,7 @@ body {
     color: white;
 }
 
-.logo{font-style: italic;
-    font-weight: bold;
-    font-size: 20px;
-
-}
-
-.title{
-    font-size: 60px;
-
-}
-
-.par{
-    font-size: 20px;
-}
-
+/* Hero Section */
 .hero {
     text-align: center;
     color: white;
@@ -67,7 +53,7 @@ body {
     border-radius: 0 20px 20px 0;
 }
 
-
+/* Topics Section */
 .topics {
     text-align: center;
     padding: 3rem 1rem;
@@ -85,25 +71,41 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
+/* How It Works */
 .how-it-works {
-    background: #0ea5e9;
+    background-image:url('Images/team.png');
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #1e293b;
     color: white;
     text-align: center;
     padding: 3rem 1rem;
+    height: 80%;
+}
+.how-it-works h2 {
+    margin-bottom:30px;
+    font-size: 30px;
 }
 .steps {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    text-align: center;
 }
 .step {
-    background: #0284c7;
+    background: #145b7fbd;
     padding: 1rem;
     border-radius: 5px;
+    display: block;
+    justify-content: center;
+    gap: 30px;
+}
+.step h3 {
+    margin-bottom: 10px !important;
+    font-size: 22px;
 }
 
-
+/* FAQs */
 .faqs {
     text-align: center;
     padding: 3rem 1rem;
@@ -123,7 +125,7 @@ body {
     display: block;
 }
 
-
+/* Contact */
 .contact {
     text-align: center;
     padding: 3rem 1rem;
@@ -141,7 +143,7 @@ iframe {
     border-radius: 5px;
 }
 
-
+/* Footer */
 footer {
     background: #1e293b;
     color: white;
