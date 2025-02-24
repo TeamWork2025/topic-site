@@ -64,17 +64,60 @@
     
 
     <!-- FAQs -->
-    <section class="faqs">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq">
-            <button class="toggle-faq">What is Topic Listing? <span>+</span></button>
-            <p class="faq-answer">Topic Listing is a free Bootstrap 5 CSS template...</p>
+    <section class="faqs container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+                <div class="faq-img">
+                    <img src="images/questions.avif" alt="Illustration">
+                </div>
+            </div>
         </div>
-        <div class="faq">
-            <button class="toggle-faq">How to find a topic? <span>+</span></button>
-            <p class="faq-answer">You can search using the search bar at the top...</p>
+    
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="faq-content">
+                    <div class="faq">
+                        <button class="toggle-faq">What is Topic Listing? <span class="icon">+</span></button>
+                        <p class="faq-answer">Topic Listing is a free Bootstrap 5 CSS template. <b>You are not allowed to 
+                            redistribute this template</b> on any other template collection website 
+                            without permission. Please contact TemplateMo for more detail.
+                            Thank you.
+                    </p>
+                    </div>
+                    <div class="faq">
+                        <button class="toggle-faq">How to find a topic? <span class="icon">+</span></button>
+                        <p class="faq-answer">You can search using the search bar at the top.</p>
+                    </div>
+                    <div class="faq">
+                        <button class="toggle-faq">Does it need to be paid? <span class="icon">+</span></button>
+                        <p class="faq-answer">No, it is completely free to use.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggles = document.querySelectorAll(".toggle-faq");
+    
+            toggles.forEach((toggle) => {
+                toggle.addEventListener("click", function () {
+                    const answer = this.nextElementSibling;
+                    answer.classList.toggle("active");
+    
+                    // Change the "+" to "-" when expanded
+                    const icon = this.querySelector(".icon");
+                    if (answer.classList.contains("active")) {
+                        icon.textContent = "−";
+                    } else {
+                        icon.textContent = "+";
+                    }
+                });
+            });
+        });
+    </script>
 
     <!-- Contact -->
     <section class="contact">

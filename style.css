@@ -106,21 +106,134 @@ body {
 }
 
 /* FAQs */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* FAQ Section */
 .faqs {
     text-align: center;
     padding: 3rem 1rem;
 }
-.faq {
-    background: white;
-    padding: 1rem;
-    margin: 0.5rem 0;
-    border-radius: 5px;
-    cursor: pointer;
+
+.faq-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
 }
+
+/* FAQ Box Layout */
+.faq-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ Image */
+.faq-img img {
+    max-width: 250px;
+    height: auto;
+    margin-right: 2rem;
+}
+
+/* FAQ Content */
+.faq-content {
+    flex: 1;
+}
+
+/* FAQ Item */
+/* FAQ Section */
+.faqs {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.faq-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* FAQ Image - Now below the header */
+.faq-img {
+    margin-bottom: 1.5rem;
+}
+
+.faq-img img {
+    max-width: 300px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* FAQ Content */
+.faq-content {
+    text-align: left;
+}
+
+/* FAQ Item */
+.faq {
+    padding: 1rem 0; /* Removes background box */
+    border-bottom: 1px solid #ddd; /* Adds subtle separation */
+}
+
+/* Remove the button look */
+.toggle-faq {
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+/* FAQ Answer - Initially Hidden */
+.faq-answer {
+    display: none;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+.toggle-faq {
+    background-color: #8ebae9;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-faq:hover {
+    background-color: #4d9bee; 
+}
+
+.icon {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .faq-answer {
     display: none;
     margin-top: 0.5rem;
 }
+
 .faq-answer.active {
     display: block;
 }
