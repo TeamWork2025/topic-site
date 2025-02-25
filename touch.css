@@ -1,0 +1,25 @@
+#touch-header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.touch{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+body{
+	font-family: 'Calibri', Courier, monospace;
+}
+
+.form1{
+	background-color: #cedeeb;
+	padding: 60px 60px 30px 0px;
+}
+
+a{
+	color: #00b8b8;
+	text-decoration: none;
+}
